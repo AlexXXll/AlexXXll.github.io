@@ -5,17 +5,36 @@
     <title>MY Info</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+setInterval(function () {
+date = new Date(),
+h = date.getHours(),
+m = date.getMinutes(),
+s = date.getSeconds(),
+h = (h < 10) ? '0' + h : h,
+m = (m < 10) ? '0' + m : m,
+s = (s < 10) ? '0' + s : s,
+document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+}, 1000);
+</script>
+
+<span style="color:#7e5a25; font-size:24pt; border:10px solid #e1d4ae; background:#e8e3d4; padding:5px;">
+<span id="time">00:00:00</span>
+</span>
+
 </head>
 <body>
     <div class="header">
         <div class="logo">
             <img src="img/logo.jpg" alt="" class="logoimg">
         </div>
-        <div class="items"><a href="index.html">Обо мне</a></div>
-        <div class="items"><a href="index_2.html">Что могу</a></div>
+        <div class="items"><a href="About_me.html">Обо мне</a></div>
+        <div class="items"><a href="What_I_can.html">Что могу</a></div>
         
     </div>
     <div class="page">
+
         <div class="block">
             <div class="headerBlock">
                 <h1>[ Всем привет, я - Александр Тогаев ]</h1>

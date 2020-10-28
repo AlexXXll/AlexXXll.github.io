@@ -52,6 +52,26 @@ p{
     align-items: center;
     padding-bottom: 15px;
 }
+#bg-canvas {
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../img/space.jpg);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+#bg-canvas #canvas {
+    width: 100%;
+    height: 600px;
+}
+#bg-canvas #text-canvas {
+    position: absolute;
+    top: 0;
+    color: #FFF;
+    font-size: 30px;
+    padding: 30px 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
 .block{
     width: 70%;
     display: block;
