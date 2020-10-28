@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>MY Info</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript">
+setInterval(function () {
+date = new Date(),
+h = date.getHours(),
+m = date.getMinutes(),
+s = date.getSeconds(),
+h = (h < 10) ? '0' + h : h,
+m = (m < 10) ? '0' + m : m,
+s = (s < 10) ? '0' + s : s,
+document.getElementById('time').innerHTML = h + ':' + m + ':' + s;
+}, 1000);
+</script>
+
+<span style="color:#7e5a25; font-size:24pt; border:10px solid #e1d4ae; background:#e8e3d4; padding:5px;">
+<span id="time">00:00:00</span>
+</span>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.jpg" alt="" class="logoimg">
+        </div>
+        <div class="items"><a href="index.html">Обо мне</a></div>
+        <div class="items"><a href="index_2.html">Что могу</a></div>
+        
+    </div>
+    <div class="page">
+        <div class="block">
+            <div class="headerBlock">
+                <h1>[ Всем привет, я - Александр Тогаев ]</h1>
+                <p>Ученик группы ПМ-О-17</p>
+
+            </div>
+            <div class="content">
+                <div class="headcontent">
+                    <div class="abm">
+                        <h1>ОБО МНЕ</h1>
+                    </div>
+                    <div class="abm2">
+                        <p>коротко и быстро</p>
+                    </div>
+                </div>
+                <div class="myinfo">
+                    <div class="headinfo">
+                        <h1>Приятно познакомиться, я Александр Тогаев и это моя страница-портфолио.</h1>
+                        <p>Я начинающий программист и team lider узкого круга разработчиков. На пройденных курсах университета и посещениях семинаров с разных мероприятий, по улучшению навыков, я освоил на должном уровне описание алгоритмов и структуры написания кода на таких языках как C++, SQL, Html, PHP, JS, CSS и Python для решений различного рода задач. Много сил было вложено на понимание азов высшей математики, физики и логики. Немало времени я посвятил также на улучшение организационных и мотивирующих способностей по отношению к персоналу.</p>
+                    </div>
+                </div>
+                <div class="tityl">
+                    <div class="imgs">
+                        <img src="img/V1.jpg" alt="">
+                    </div>
+                    <div class="gif">
+                        <img src="img/gif.gif" alt="">
+                    </div>
+                    <div class="imgs">
+                        <img src="img/V2.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+    <div class="box">
+        <div class="chat">
+            <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/CometServerApi.js" ></script>
+<script type="text/javascript" src="https://comet-server.ru/doc/html_chat.js" ></script>
+<link rel="stylesheet" type="text/css" href="https://comet-server.ru/doc/html_chat.css"></link>
+ 
+<!-- Осталось настроить сам чат и запустить, для этого пишем небольшой скрипт. -->
+<div id="html-chat"></div>
+<style>
+/* Здесь настроим css стили для чата*/
+.holder-html-chat{ border: 1px solid #d96d47;padding:10px;background-color: #333e50;width: 600px;}
+.html-chat-history{ max-width: 600px; overflow: auto;max-height: 900px; border: 1px solid #d96d47;padding: 5px;color: #d96d47;font-size: 22px;}
+.html-chat-js-name{ margin-top:10px; background-color: #333e50;color: #d96d47;border-color: #d96d47;}
+.html-chat-js-input{ max-width: 600px;max-height: 100px;width: 600px;margin-top:10px; background-color: #333e50;color: #d96d47;border-color: #d96d47;}
+.html-chat-js-button-holder{ margin-bottom: 0px;margin-top: 10px; }
+.html-chat-js-button-holder input{ width: 220px; background-color: #333e50;color: #d96d47;border-color: #d96d47;}
+.html-chat-js-answer{ float:right; }
+.html-chat-js-answer a{ color: #d96d47;font-size: 12px; font-family: cursive;}
+.html-chat-js-answer a:hover{ color: #338;font-size: 12px; font-family: cursive;}
+.html-chat-msg{ margin: 0px; }
+</style>
+ 
+<script>
+ 
+   /**
+    * Чат работает на comet-server.ru
+    * По любым вопросам обращайтесь support@comet-server.ru или на сайт comet-server.ru
+    */
+    $(document).ready(function()
+    {
+       // Запуск api комет сервера
+       CometServer().start({dev_id: 15 }) // Идентификатор разработчика на comet-server.ru
+ 
+       // Запуск чата. Передаём ему элемент в котором надо создать окно чата.
+       htmljs_Chat_Init( $("#html-chat") )
+    });
+</script>
+        </div>
+    </div>
+
+    <div class="kolon">
+        <div class="pochta">
+            <h1>Для связи со мной: </h1>
+            <div class="items"><a href="mailto:togaev1999@mail.com">пишите на почту</a></div>
+        </div>
+    </div>
+</body>
+</html>
